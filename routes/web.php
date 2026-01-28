@@ -41,7 +41,8 @@ Route::prefix('admin')
     ->name('admin.')
     ->group(function () {
 
-        Route::view('/dashboard', 'admin.dashboard')->name('dashboard');
+       Route::get('/dashboard', [AdminDashboardController::class, 'index'])
+        ->name('dashboard');
 
         Route::resource('student', AdminStudentController::class);
         Route::resource('guardian', AdminGuardianController::class);
