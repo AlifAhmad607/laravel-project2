@@ -600,7 +600,7 @@
             <span class="sr-only">Open user menu</span>
             <img
               class="w-8 h-8 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gough.png"
+              src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/82/2025/08/21/kurt-cobain-161498-1954805459.jpg"
               alt="user photo"
             />
           </button>
@@ -612,11 +612,11 @@
             <div class="py-3 px-4">
               <span
                 class="block text-sm font-semibold text-gray-900 dark:text-white"
-                >Neil Sims</span
+                >Alip</span
               >
               <span
                 class="block text-sm text-gray-900 truncate dark:text-white"
-                >name@flowbite.com</span
+                >alifahmad@gmail.com</span
               >
             </div>
             <ul
@@ -720,11 +720,16 @@
               aria-labelledby="dropdown"
             >
               <li>
-                <a
-                  href="#"
-                  class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >Sign out</a
-                >
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit"
+                        class="w-full text-left px-4 py-2 text-sm
+                              text-gray-700 hover:bg-gray-100
+                              dark:text-gray-300 dark:hover:bg-gray-700">
+                        Logout
+                    </button>
+                </form>
+
               </li>
             </ul>
           </div>
